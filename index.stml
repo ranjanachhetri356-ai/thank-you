@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShoeStyle - Premium Shoes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #111;
+            color: white;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff4d4d;
+        }
+
+        .hero {
+            height: 90vh;
+            background: url('https://images.unsplash.com/photo-1542291026-7eec264c27ff') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 50px;
+            background: rgba(0,0,0,0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .products {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .products h2 {
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            width: 250px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin: 15px 0 10px;
+        }
+
+        .price {
+            color: #ff4d4d;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            border: none;
+            background: #111;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #ff4d4d;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+
+        @media(max-width: 768px) {
+            .product-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero h2 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ShoeStyle</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Step Into Style</h2>
+</section>
+
+<section class="products">
+    <h2>Featured Shoes</h2>
+    <div class="product-container">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5" alt="Running Shoe">
+            <h3>Running Pro</h3>
+            <p class="price">$99</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6" alt="Casual Shoe">
+            <h3>Casual Comfort</h3>
+            <p class="price">$79</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1528701800489-20be3c6c48b2" alt="Sneakers">
+            <h3>Urban Sneakers</h3>
+            <p class="price">$120</p>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 ShoeStyle. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
